@@ -37,7 +37,7 @@ async function moduleProject4() {
       let selectedCity = evt.target.value
       let url = `http://localhost:3003/api/weather?city=${selectedCity}`
       // console.log(url)
-
+      
       const res = await axios.get(url)
 
       document.querySelector('#weatherWidget').style.display = 'block'
