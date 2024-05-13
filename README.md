@@ -125,9 +125,9 @@ Always working inside your event listener:
 
 1. Disable the dropdown after researching how. We want users making a new selection **after** the weather data for the selected location arrives!
 
-1. Modify the inline style on the **div#weatherWidget** by setting display to 'none'. Whenever a user selects a new city, the widget should hide until the request succeeds.
+2. Modify the inline style on the **div#weatherWidget** by setting display to 'none'. Whenever a user selects a new city, the widget should hide until the request succeeds.
 
-1. Inject text content into p.info that reads `Fetching weather data...`. This text acts as loading indicator. Research shows users don't mind waiting for a bit, *as long as they're properly informed and entertained* by spinners, "wait" messages, and animations.
+3. Inject text content into p.info that reads `Fetching weather data...`. This text acts as loading indicator. Research shows users don't mind waiting for a bit, *as long as they're properly informed and entertained* by spinners, "wait" messages, and animations.
 
 ❗ These little things don't sound very interesting but are, in fact, very important for a good user experience. Most users on the planet leverage slow networks and slow hardware.
 
@@ -144,9 +144,9 @@ Always working inside your event listener:
 
 1. **Form a proper URL** using your JavaScript skills, and then use Axios to initiate a GET request to the URL. Make sure to request the weather for the correct city! You can find out which city got selected by inspecting `event.target.value` inside your event listener.
 
-1. Use Axios to make a GET request to the API.
+2. Use Axios to make a GET request to the API.
 
-1. Handle promise rejection by logging the `error.message` to the console or by setting a [break point](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) in the code.
+3. Handle promise rejection by logging the `error.message` to the console or by setting a [break point](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) in the code.
 
 ❗ You can test your error logging code by deliberately mistyping the URL to [get a 404 "Not Found" error](./images/error-console.png).
 
@@ -169,9 +169,9 @@ Now that the data is available, some house-keeping operations are needed before 
 
 1. Empty out the text content of **p.info**.
 
-1. Re-enable the **dropdown**.
+2. Re-enable the **dropdown**.
 
-1. Modify the inline style on the **div#weatherWidget** to make the element visible again.
+3. Modify the inline style on the **div#weatherWidget** to make the element visible again.
 
 Finally, the main course! Use the API data to inject the correct information into the DOM, replacing the "placeholder" information in the HTML.
 
